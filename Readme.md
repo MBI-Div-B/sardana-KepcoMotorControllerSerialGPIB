@@ -1,5 +1,5 @@
 # sardana-KepcoMotorControllerSerialGPIB
-This a Sardana MotorController for controlling Kepco BOP power supplies using Serial-to-GPIB-adapters. It uses the standard command strings needed for controlling a Kepco GPIB power supply, but sends them to a serial ttyDevice instead of a real GPIB port.
+This a Sardana MotorController for controlling Kepco BOP power supplies using Serial-to-GPIB-adapters. It uses the standard command strings needed for controlling a Kepco GPIB power supply, but sends them to a serial ttyDevice instead of a real GPIB port. It thus allows to convert a GPIB-controllable Kepco to a serial device.
 
 # Installation
 ## USB Serial converter
