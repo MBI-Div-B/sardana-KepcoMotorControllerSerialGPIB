@@ -17,7 +17,7 @@ sudo udevadm trigger --action=add
 ```
 
 ## Serial-to-GPIB adapter
-The Sardana controller does not allow to configure parameters specific to the GPIB protocol. This has to be done before in the respective Serial-to-GPIB adapter, which usually allow to set the GPIB address and other parameters via serial control strings or the a configuration utility provided by the manufacturer. Don't forget to save the parameters in the adapters non-volatile memory.
+The Sardana controller does not allow to configure parameters specific to the GPIB protocol. This has to be done before in the respective Serial-to-GPIB adapters, which usually allow to set its own GPIB address as well the address it will talk to, as well as other parameters via specific control strings or via a configuration utility provided by the manufacturer. Don't forget to save the parameters in the adapters non-volatile memory.
 
 ## Sardana Configuration
 The ```KepcoMotorControllerSerialGPIB``` Class requires to set the following properties:
