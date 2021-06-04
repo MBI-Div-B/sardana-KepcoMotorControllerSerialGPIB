@@ -3,7 +3,7 @@ This a Sardana MotorController for controlling Kepco BOP power supplies using Se
 
 # Installation
 ## USB Serial converter
-Create a udev rule in order to mount the USB Serial converter always under the same link, e.g. ```/dev/ttyPIMercury```.
+Create a udev rule in order to mount the USB Serial converter always under the same link, e.g. ```/dev/ttyKepco```.
 
 First check the VendorID, ProductID, and SerialNumber using ```dmesg```. Then add a new udev rule:
 ```
