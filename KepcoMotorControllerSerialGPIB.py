@@ -62,7 +62,7 @@ class KepcoMotorControllerSerialGPIB(MotorController):
             print ('Kepco is NOT initialized!')
         # initialize hardware communication        
         self._motors = {}
-        self._isMoving = None
+        self._isMoving = False
         self._moveStartTime = None
         self._threshold = 0.1
         self._target = None
