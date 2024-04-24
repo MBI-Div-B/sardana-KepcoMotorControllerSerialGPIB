@@ -48,6 +48,9 @@ class KepcoMotorControllerSerialGPIB(MotorController):
         # open serial port
         self.serial.open()
         
+        self.serial.write("++addr 6\n".encode("utf-8"))
+        time.sleep(0.05)
+        
         print ('Kepco Initialization')
         self.serial.write("*IDN?\n".encode("utf-8"))
         #self.serial.flush()
